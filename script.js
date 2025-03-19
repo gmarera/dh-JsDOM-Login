@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isValidEmail && isValidPassword && passwordMatch) {
             saveToLocalStorage();
             alert('Has ingresado con éxito.');
+            emailInput.value = '';
+            passwordInput.value = '';
+            confirmPasswordInput.value = '';
         }
     }
 
